@@ -1,0 +1,11 @@
+'.gitignore' -text
+'client/README.md' -text
+'client/eslint.config.js' -text
+'client/index.html' -text
+'client/package-lock.json' -text
+'client/package.json' -text
+'client/src/App.css' -text
+'client/src/App.jsx' -text
+'client/src/index.css' -text
+'client/src/main.jsx' -text
+'client/vite.config.js' -text

@@ -1,12 +1,11 @@
-import Template from './components/Template';
+import AllRoutes from "./routes/AllRoutes";
 
 const App = () => {
-  return ( 
-    <div className="flex items-center justify-center h-80 m-auto">
-      <Template/>
-    </div>
-   );
-}
- 
-export default App;
+  return (
+    <>
+      <AllRoutes />
+    </>
+  );
+};
 
+export default App;

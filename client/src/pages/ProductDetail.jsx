@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 import { useParams, Link } from "react-router-dom";
 
 export const ProductDetail = () => {
@@ -7,19 +8,16 @@ export const ProductDetail = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:8000/products");
-      const data = await response.json();
+      const { data } = await axios.get(
+        `http://localhost:4000/api/products/${id}`
+      );
       setProduct(data);
     };
     fetchData();
-  }, []);
-
-  const productItem = product.find((p) => p.id == id);
-
-  if (!productItem) return <p>Loading...</p>;
+  }, [id]);
 
   return (
-    <div className="container mx-auto p-8 max-w-5xl">
+    <div className="container mx-auto p-8 max-w-5xl font-[poppins]">
       {/* Go Back Button */}
       <Link
         to="/"
@@ -31,26 +29,24 @@ export const ProductDetail = () => {
         {/* Product Image */}
         <div className="md:w-1/2">
           <img
-            src={productItem.image_url}
-            alt={productItem.name}
+            src={product.image_url}
+            alt={product.name}
             className="w-full h-auto rounded-lg shadow-lg"
           />
         </div>
 
         {/* Product Details */}
         <div className="md:w-1/2 space-y-4">
-          <h1 className="text-3xl font-bold text-gray-800">
-            {productItem.name}
-          </h1>
-          <p className="text-gray-600 text-lg">{productItem.category}</p>
+          <h1 className="text-3xl font-bold text-gray-800">{product.name}</h1>
+          <p className="text-gray-600 text-lg">{product.category}</p>
           <p className="text-2xl font-semibold text-blue-600">
-            ${productItem.price}
+            ${product.price}
           </p>
-          <p className="text-gray-700">{productItem.description}</p>
-          <p className="text-sm text-gray-500">In stock: {productItem.stock}</p>
+          <p className="text-gray-700">{product.description}</p>
+          <p className="text-sm text-gray-500">In stock: {product.stock}</p>
 
           {/* Add to Cart Button */}
-          <button className="mt-4 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-500 transition duration-300">
+          <button className="mt-4 px-6 py-3 bg-blue-600 text-white font-semibold rounded-sm hover:bg-blue-500 transition duration-300">
             Add to Cart
           </button>
         </div>

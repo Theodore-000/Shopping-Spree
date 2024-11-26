@@ -1,0 +1,109 @@
+export const products = [
+  {
+    id: 1,
+    name: "Wireless Mouse",
+    category: "Electronics",
+    price: 29.99,
+    stock: 150,
+    description:
+      "A wireless mouse with ergonomic design and long battery life.",
+    image_url:
+      "https://ideogram.ai/assets/image/lossless/response/RbIcjBK5TwOVHEM-A2X9_w",
+  },
+  {
+    id: 2,
+    name: "Bluetooth Headphones",
+    category: "Electronics",
+    price: 79.99,
+    stock: 200,
+    description:
+      "Noise-cancelling Bluetooth headphones with high-quality sound.",
+    image_url:
+      "https://ideogram.ai/assets/progressive-image/balanced/response/tCGLXwIoTsulLrS-6JFO8Q",
+  },
+  {
+    id: 3,
+    name: "Smartphone",
+    category: "Electronics",
+    price: 499.99,
+    stock: 50,
+    description:
+      "Latest smartphone with advanced camera features and fast processor.",
+    image_url:
+      "https://ideogram.ai/assets/image/lossless/response/4ioTb87NRH27FVWEOup2xQ",
+  },
+  {
+    id: 4,
+    name: "Leather Wallet",
+    category: "Fashion",
+    price: 39.99,
+    stock: 300,
+    description:
+      "Genuine leather wallet with multiple compartments for cards and cash.",
+    image_url:
+      "https://ideogram.ai/assets/image/lossless/response/mPisOGm5Ql6XD-nQqx-RRQ",
+  },
+  {
+    id: 5,
+    name: "Sunglasses",
+    category: "Fashion",
+    price: 24.99,
+    stock: 120,
+    description: "Stylish sunglasses with UV protection and a comfortable fit.",
+    image_url:
+      "https://ideogram.ai/assets/image/lossless/response/jEZ520P_Qu2mm2hFcnHIbw",
+  },
+  {
+    id: 6,
+    name: "Running Shoes",
+    category: "Sportswear",
+    price: 59.99,
+    stock: 80,
+    description:
+      "High-performance running shoes designed for comfort and durability.",
+    image_url:
+      "https://ideogram.ai/assets/progressive-image/balanced/response/S9yRN0x5T7eAEcqUQ_ECrg",
+  },
+  {
+    id: 7,
+    name: "Tennis Racket",
+    category: "Sportswear",
+    price: 119.99,
+    stock: 45,
+    description: "Lightweight tennis racket with superior control and power.",
+    image_url:
+      "https://ideogram.ai/assets/image/lossless/response/EtId89flTGWda8_lSSqY9g",
+  },
+  {
+    id: 8,
+    name: "Cookware Set",
+    category: "Home & Kitchen",
+    price: 149.99,
+    stock: 70,
+    description:
+      "Non-stick cookware set with multiple pots and pans for everyday cooking.",
+    image_url:
+      "https://ideogram.ai/assets/image/lossless/response/BGDU3DX0Sru49vWACn3XtQ",
+  },
+  {
+    id: 9,
+    name: "Electric Kettle",
+    category: "Home & Kitchen",
+    price: 39.99,
+    stock: 110,
+    description:
+      "Quick boiling electric kettle with auto shut-off and boil-dry protection.",
+    image_url:
+      "https://ideogram.ai/assets/image/lossless/response/5pV4VhBHQ1iCeaOZRWu7EA",
+  },
+  {
+    id: 10,
+    name: "Portable Power Bank",
+    category: "Accessories",
+    price: 29.99,
+    stock: 180,
+    description: "Compact portable power bank for charging devices on the go.",
+    image_url:
+      "https://ideogram.ai/assets/image/lossless/response/SomQpeiURsSRo-6pO3czZA",
+  },
+];
